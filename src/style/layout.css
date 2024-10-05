@@ -1,0 +1,26 @@
+/* Assuming the navbar has a fixed height or fixed position */
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full height layout */
+}
+
+.content-container {
+  flex-grow: 1; /* This allows the content to grow and fill the space between the navbar and footer */
+  /* padding-top: 80px; Adjust according to your navbar height */
+  /* padding-bottom: 20px; Optional: If you want some space before the footer */
+}
+
+/* Example for a fixed navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Keep it above other content */
+}
+
+/* Footer styling */
+footer {
+  width: 100%;
+  margin-top: auto; /* Push the footer to the bottom */
+}
