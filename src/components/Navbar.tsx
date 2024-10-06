@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Play, Menu } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export function GalaxoNavbarComponent() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,30 +33,30 @@ export function GalaxoNavbarComponent() {
           {/* Navbar links for large screens */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              <a
-                href="#"
+              <Link
+                to="/"
                 className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium"
               >
                 Home
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/exoplanet"
                 className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium"
               >
-                About
-              </a>
-              <a
-                href="#"
+                Explore
+              </Link>
+              <Link
+                to="/story"
                 className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium"
               >
-                Services
-              </a>
-              <a
-                href="#"
+                Stories
+              </Link>
+              <Link
+                to="#"
                 className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium"
               >
-                Contact
-              </a>
+                Team
+              </Link>
             </div>
           </div>
           {/* Mobile menu button */}

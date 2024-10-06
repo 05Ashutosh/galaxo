@@ -2,6 +2,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { SpaceSignUpComponent } from "./components/Sign-up";
 import { SpaceLoginComponent } from "./components/space-login";
 import { Layout } from "./components/Layout"; // The Layout component with Navbar and Footer
+import Story from "./components/Story";
+import Home from "./pages/Home";
+import StoriesPage from "./pages/Stories";
+import ExoPlanet from "./pages/ExoPlanet";
 
 function App() {
   return (
@@ -12,18 +16,12 @@ function App() {
           <Route index element={<Home />} />
           <Route path="login" element={<SpaceLoginComponent />} />
           <Route path="signup" element={<SpaceSignUpComponent />} />
+          <Route path="/story" element={<Story />} />
+          <Route path="/stories" element={<StoriesPage />} />
+          <Route path="/exoplanet" element={<ExoPlanet />} />
         </Route>
       </Routes>
     </Router>
-  );
-}
-
-function Home() {
-  return (
-    <div className="container mx-auto p-8">
-      <h1>Welcome to the Space App!</h1>
-      <p>Explore the universe of opportunities!</p>
-    </div>
   );
 }
 

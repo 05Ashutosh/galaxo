@@ -22,7 +22,7 @@ export function SpaceSignUpComponent() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+    <div className="min-h-screen gradient-animation flex items-center justify-center pt-20 pb-5">
       <div className="flex w-full max-w-5xl bg-white rounded-lg shadow-lg overflow-hidden">
         {/* Left Section: Sign Up Form */}
         <div className="flex flex-col justify-center w-1/2 p-12 bg-white">
@@ -89,7 +89,7 @@ export function SpaceSignUpComponent() {
               className="w-full bg-black text-white hover:bg-gray-800"
               onClick={SignUpEmailPassword}
             >
-              {isLogin ? "Log In" : "Sign Up"}
+              Sign Up
             </Button>
           </form>
 
@@ -99,7 +99,7 @@ export function SpaceSignUpComponent() {
               onClick={() => setIsLogin(!isLogin)}
               className="text-blue-600 hover:underline"
             >
-              {isLogin ? "Sign Up" : "Log In"}
+              <Link to="/login">Login</Link>
             </button>
           </p>
         </div>

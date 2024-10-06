@@ -81,7 +81,7 @@ export function SpaceLoginComponent() {
               className="w-full bg-black text-white hover:bg-gray-800"
               onClick={LoginEmailPassword}
             >
-              {isLogin ? "Log In" : "Sign Up"}
+              Sign Up
             </Button>
           </form>
 
@@ -91,7 +91,7 @@ export function SpaceLoginComponent() {
               onClick={() => setIsLogin(!isLogin)}
               className="text-blue-600 hover:underline"
             >
-              {isLogin ? "Sign Up" : "Log In"}
+              <Link to="/signup">Sign Up</Link>
             </button>
           </p>
         </div>
