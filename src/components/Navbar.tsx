@@ -45,17 +45,18 @@ export function GalaxoNavbarComponent() {
               >
                 Explore
               </Link>
+
               <Link
-                to="/story"
+                to="/stories"
                 className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium"
               >
                 Stories
               </Link>
               <Link
-                to="#"
+                to="/creationboard"
                 className="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium"
               >
-                Team
+                Probe
               </Link>
             </div>
           </div>
@@ -96,9 +97,7 @@ export function GalaxoNavbarComponent() {
             <a
               href="#"
               className="text-white hover:text-gray-200 block px-3 py-2 rounded-md text-base font-medium"
-            >
-              Contact
-            </a>
+            ></a>
           </div>
         </div>
       )}

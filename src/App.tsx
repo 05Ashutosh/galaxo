@@ -6,6 +6,8 @@ import Story from "./components/Story";
 import Home from "./pages/Home";
 import StoriesPage from "./pages/Stories";
 import ExoPlanet from "./pages/ExoPlanet";
+import IndStory from "./pages/IndStory";
+import PlanetCreator from "./components/PlanetCreator";
 
 function App() {
   return (
@@ -16,9 +18,11 @@ function App() {
           <Route index element={<Home />} />
           <Route path="login" element={<SpaceLoginComponent />} />
           <Route path="signup" element={<SpaceSignUpComponent />} />
-          <Route path="/story" element={<Story />} />
+          <Route path="/story/:planet" element={<Story />} />
           <Route path="/stories" element={<StoriesPage />} />
           <Route path="/exoplanet" element={<ExoPlanet />} />
+          <Route path="/newstories" element={<IndStory />} />
+          <Route path="/creationboard" element={<PlanetCreator />} />
         </Route>
       </Routes>
     </Router>

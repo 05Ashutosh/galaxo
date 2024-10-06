@@ -19,10 +19,9 @@ export default function GalFooter() {
           {/* Contact Information */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
-            <p>500 Terry Francine Street,</p>
-            <p>San Francisco, CA 94158</p>
-            <p>info@mysite.com</p>
-            <p>Tel: 123-456-7890</p>
+            <p>BIRLA INSTITUTE OF APPLIED SCIENCES</p>
+            <p>Bhimtal, Uttarakhand</p>
+            <a>birlainstitude.co.in</a>
           </div>
 
           {/* Quick Menu */}
@@ -35,18 +34,18 @@ export default function GalFooter() {
                 </Link>
               </li>
               <li>
-                <Link to="/planets" className="hover:text-green-400">
-                  Planets
+                <Link to="/exoplanet" className="hover:text-green-400">
+                  Explore
                 </Link>
               </li>
               <li>
-                <Link to="/company" className="hover:text-green-400">
-                  Company
+                <Link to="/stories" className="hover:text-green-400">
+                  Stories
                 </Link>
               </li>
               <li>
                 <Link to="/careers" className="hover:text-green-400">
-                  Careers
+                  Team
                 </Link>
               </li>
               <li>
@@ -93,8 +92,11 @@ export default function GalFooter() {
             </Link>
           </div>
           <div className="text-sm text-gray-500">
-            © 2035 by GALAXO. Made BY GALAXO Team™
+            © 2035 by GALAXO. Made BY CELESTIAL ODYSSAY™
           </div>
+          <a className="text-sm text-gray-500">
+            https://science.nasa.gov/exoplanets/
+          </a>
         </div>
       </div>
     </footer>

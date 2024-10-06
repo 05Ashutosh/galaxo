@@ -45,7 +45,7 @@ const developer = [
       "Innovative front-end developer who loves coding elegant interfaces and enhancing user experiences.",
   },
   {
-    name: "Anukarti Kapil",
+    name: "Anukriti Kapil",
     role: "Designer",
     image: anu,
     description:
